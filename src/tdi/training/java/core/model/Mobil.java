@@ -9,7 +9,7 @@ public class Mobil extends Kendaraan{
     //overload
     public void setNama(String nama, String pabrik){
         this.nama = nama;
-        this.setPabrik(pabrik);
+        super.setPabrik(pabrik);
     }
     //override
     public void setPabrik(String nama){
@@ -24,8 +24,8 @@ public class Mobil extends Kendaraan{
     public void tampil(){
         System.out.println("Nama : "+nama());
         System.out.println("Lokasi : "+lokasi);
-        System.out.println("Jumlah roda : "+JumlahRoda);
-        System.out.println("Pabrik Asal : "+getPabrik());
+        System.out.println("Jumlah roda : "+super.getJumlahRoda());
+        System.out.println("Pabrik Asal : "+super.getPabrik());
     }
 
 }
