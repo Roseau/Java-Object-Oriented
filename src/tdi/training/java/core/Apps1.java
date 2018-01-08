@@ -3,13 +3,14 @@ package src.tdi.training.java.core;
 import src.tdi.training.java.core.model.Sepeda;
 import src.tdi.training.java.core.model.Motor;
 import src.tdi.training.java.core.model.ZX10RR;
-
+import src.tdi.training.java.core.model.MahasiswaService;
 
 public class Apps1{
     public static void main(String[] args){
         System.out.println("Hello world");
         Sepeda s1 = new Sepeda();
         ZX10RR rea = new ZX10RR();
+        MahasiswaService ms = new MahasiswaService();
         s1.tingkatkanKecepatan(50);
         Motor m1 = new Motor();
         System.out.println("Kecepatan saat ini adalah : "+ s1.getKecepatan());
@@ -21,5 +22,9 @@ public class Apps1{
         System.out.println(m1.toString());
         System.out.println("engine : [engineBlock : "+rea.engineBloc+", cylinder : "+rea.cylinder+"]");
         System.out.println("breaking system : [ abs : "+rea.abs+"], profile race mode is : "+rea.raceMode());
+        System.out.println("aplikasi polymorphism");
+        System.out.println(ms.Cari());
+        System.out.println(ms.Cari("Erich zann",1987));
+        System.out.println(ms.Cari(1965));
     }
 }
