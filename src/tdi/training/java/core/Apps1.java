@@ -46,6 +46,7 @@ public class Apps1{
         toyota.tampil();
         System.out.println("============================");
         daihatsu.tampil();
+        System.out.println("============================");
         yamaha.setPabrik(yamaha.getPabrik());
     }
 }
