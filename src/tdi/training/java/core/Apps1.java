@@ -38,6 +38,7 @@ public class Apps1{
         ganti.bicara();*/
         Mobil toyota = new Mobil();
         Mobil daihatsu = new Mobil();
+        Motorcycle yamaha = new Motorcycle();
         toyota.setNama("Proto 1");
         daihatsu.setNama("Proto III", "Pabrik dejah");
         System.out.println("============================");
@@ -45,5 +46,6 @@ public class Apps1{
         toyota.tampil();
         System.out.println("============================");
         daihatsu.tampil();
+        yamaha.setPabrik(yamaha.getPabrik());
     }
 }

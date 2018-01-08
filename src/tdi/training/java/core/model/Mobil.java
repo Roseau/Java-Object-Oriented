@@ -9,12 +9,12 @@ public class Mobil extends Kendaraan{
     //overload
     public void setNama(String nama, String pabrik){
         this.nama = nama;
-        setPabrik(pabrik);
+        this.setPabrik(pabrik);
     }
-
+    //override
     public void setPabrik(String nama){
         System.out.println("nama pabrik dari class mobil");
-        super.setPabrik(nama);
+        super.setPabrik(nama); //super akan mereferensikan ke class kendaraan, sementara this akan mereferensikan ke class mobil(class ini)
     }
 
     public String nama(){
