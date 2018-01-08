@@ -4,10 +4,14 @@ import src.tdi.training.java.core.model.Sepeda;
 import src.tdi.training.java.core.model.Motor;
 import src.tdi.training.java.core.model.ZX10RR;
 import src.tdi.training.java.core.model.MahasiswaService;
+import src.tdi.training.java.core.model.ParentOverride;
+import src.tdi.training.java.core.model.ChildOverride;
+import src.tdi.training.java.core.model.Kendaraan;
+import src.tdi.training.java.core.model.Mobil;
 
 public class Apps1{
     public static void main(String[] args){
-        System.out.println("Hello world");
+        /*System.out.println("Hello world");
         Sepeda s1 = new Sepeda();
         ZX10RR rea = new ZX10RR();
         MahasiswaService ms = new MahasiswaService();
@@ -26,5 +30,20 @@ public class Apps1{
         System.out.println(ms.Cari());
         System.out.println(ms.Cari("Erich zann",1987));
         System.out.println(ms.Cari(1965));
+        ParentOverride ganti = new ParentOverride();
+        System.out.println("Nilai ucap dari parent override : ");
+        ganti.bicara();
+        ganti = new ChildOverride();
+        System.out.println("Nilai ucap dari child override : ");
+        ganti.bicara();*/
+        Mobil toyota = new Mobil();
+        Mobil daihatsu = new Mobil();
+        toyota.setNama("Proto 1");
+        daihatsu.setNama("Proto III", "Pabrik dejah");
+        System.out.println("============================");
+        toyota.setPabrik("pabrik wassalam");
+        toyota.tampil();
+        System.out.println("============================");
+        daihatsu.tampil();
     }
 }
