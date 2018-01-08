@@ -1,8 +1,9 @@
 package src.tdi.training.java.core.model;
 
 public class Sepeda{
-    private Integer kecepatan = 20;
-    private Integer jumlahRoda = 2;
+    protected Integer kecepatan = 20;
+    protected Integer jumlahRoda = 2;
+    protected String rangka = "Besi";
 
     public void tingkatkanKecepatan(int kec){
         this.kecepatan = this.kecepatan+kec;
