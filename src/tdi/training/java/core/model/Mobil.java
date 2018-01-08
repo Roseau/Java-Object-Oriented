@@ -3,6 +3,19 @@ package src.tdi.training.java.core.model;
 public class Mobil extends Kendaraan{
     private String nama;
 
+    public Mobil(){
+        super(6);
+        System.out.println("Ini constructor dipanggil ketikan inisialisasi");
+    }
+
+    public Mobil(String nama){
+        super(9);
+        this.nama = nama;
+        System.out.println(
+            String.format("variabel nama berisi %s", this.nama)
+        );
+    }
+
     public void setNama(String nama){
         this.nama = nama;
     }

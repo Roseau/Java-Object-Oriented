@@ -5,6 +5,14 @@ public class Kendaraan{
     private String pabrik;
     protected String lokasi = "redacted";
 
+    public Kendaraan(Integer jumlahroda){
+        this.JumlahRoda = jumlahroda;
+    }
+
+    //public Kendaraan(){
+
+    //}
+
     public String getPabrik(){
         return pabrik;
     }

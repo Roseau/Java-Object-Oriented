@@ -37,7 +37,7 @@ public class Apps1{
         System.out.println("Nilai ucap dari child override : ");
         ganti.bicara();*/
         Mobil toyota = new Mobil();
-        Mobil daihatsu = new Mobil();
+        Mobil daihatsu = new Mobil("Daihatsu");
         Motorcycle yamaha = new Motorcycle();
         toyota.setNama("Proto 1");
         daihatsu.setNama("Proto III", "Pabrik dejah");

@@ -3,6 +3,10 @@ package src.tdi.training.java.core;
 import src.tdi.training.java.core.model.Kendaraan;
 
 public class Motorcycle extends Kendaraan{
+    public Motorcycle(){
+        super(7);
+    }
+    
     public String getPabrik(){
         return "Yamaha";
     }
